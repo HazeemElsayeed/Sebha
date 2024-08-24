@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Marhey", sans-serif;
+  background-color: #fed7aa;
+}
+
+html {
+  font-size: 10px;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* DOES NOT WORK ON SAFARI */
+  scroll-behavior: smooth;
+}
+
+.announcement-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #064e3b;
+}
+
+.announcement-bar a,
+.announcement-bar a:link,
+.announcement-bar a:visited {
+  background-color: transparent;
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.announcement-bar a:hover {
+  color: #13bd8f;
+}
+.announcement-bar a:active {
+  color: #ea580c;
+}
+
+header {
+  /*1140px*/
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+header a:link,
+a:visited {
+  font-size: 12rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #064e3b;
+}
+
+section {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.counter--reset {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  margin-bottom: 5rem;
+}
+
+.counter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 16rem;
+  background-color: #064e3b;
+  border-radius: 150px;
+}
+
+.counter {
+  font-size: 5rem;
+  color: #fff;
+  background-color: transparent;
+}
+
+.reset-btn,
+.reset-btn:link,
+.reset-btn:visited {
+  margin-left: 2rem;
+  height: 3rem;
+  width: 5rem;
+  align-self: end;
+  margin-bottom: 2rem;
+  color: #064e3b;
+  border: 2px solid #064e3b;
+  background-color: transparent;
+}
+
+.reset-btn:hover {
+  background-color: #064e3b;
+  color: #fff;
+}
+
+.reset-btn:active {
+  background-color: #064e3b;
+  color: #ea580c;
+}
+
+.text-box {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.text-box p {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #064e3b;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+}
+
+.dec-btn,
+.dec-btn:link,
+.dec-btn:visited {
+  height: 7rem;
+  width: 7rem;
+  font-size: 8rem;
+  font-weight: 600;
+  color: #064e3b;
+  border: none;
+}
+
+.dec-btn:hover {
+  color: #13bd8f;
+}
+.dec-btn:active {
+  color: #ea580c;
+}
+
+.inc-btn,
+.inc-btn:link,
+.inc-btn:visited {
+  height: 7rem;
+  width: 7rem;
+  font-size: 8rem;
+  font-weight: 600;
+  color: #064e3b;
+  border: none;
+}
+
+.inc-btn:hover {
+  color: #13bd8f;
+}
+.inc-btn:active {
+  color: #ea580c;
+}
+
+footer {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  border-top: 3px solid #064e3b8f;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+
+.footer-links a,
+.footer-links a:link,
+.footer-links a:visited {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #064e3b;
+}
+
+.footer-links a:hover {
+  color: #13bd8f;
+}
+.footer-links a:active {
+  color: #ea580c;
+}
+
+.text-box {
+  position: relative;
+  position: relative;
+  width: 100%;
+  max-width: 1110px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+}
+
+/* hide scrollbar but allow scrolling */
+.text-box {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+.text-boxbkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.text-box > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.text-box > .active {
+  opacity: 1;
+}
+
+.carousel-btn {
+  /* font-size: 1.8rem; */
+  background-color: transparent;
+  color: #064e3b;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 2%;
+  top: 90%;
+  position: absolute;
+  z-index: 1;
+}
+
+.next {
+  right: 2%;
+  top: 90%;
+  position: absolute;
+  z-index: 1;
+}

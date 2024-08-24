@@ -1,0 +1,74 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/*****************************************/
+/* BELOW 1344px (smaller desktops) */
+/*****************************************/
+@media (max-width: 112em) {
+  .prev {
+    top: 70%;
+  }
+
+  .next {
+    top: 70%;
+  }
+}
+
+/*****************************************/
+/* BELOW 1028px (landscape tablets) */
+/*****************************************/
+@media (max-width: 65em) {
+  header a:link,
+  a:visited {
+    font-size: 12rem;
+    font-weight: 500;
+  }
+
+  .prev {
+    left: 1%;
+  }
+
+  .next {
+    right: 1%;
+  }
+
+  .text-box {
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+  }
+}
+
+/*****************************************/
+/* BELOW 704px (Smaller tablets) */
+/*****************************************/
+@media (max-width: 44em) {
+  header a:link,
+  a:visited {
+    font-size: 10rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #064e3b;
+  }
+}
+
+/*****************************************/
+/* BELOW 380px (small Phones) */
+/*****************************************/
+@media (max-width: 24em) {
+  .btns {
+    gap: 12rem;
+  }
+}
+
+/*****************************************/
+/* BELOW 280px (small Phones) */
+/*****************************************/
+@media (max-width: 18em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .btns {
+    gap: 10rem;
+  }
+}
